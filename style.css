@@ -1,0 +1,116 @@
+img{
+    max-width: 100%;
+}
+body a{
+    text-decoration: none;
+}
+.row{
+    width: 100% !important;
+}
+.tooltip-parent{
+    position: relative;
+}
+.tooltipp{
+    width: 135px;
+    position: absolute;
+    top: -45px;
+    left: -44px;
+    background-color: #000;
+    color:#fff;
+    padding: 6px 25px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    z-index: 1000;
+    transition: .4s;
+    visibility: hidden;
+    opacity: 0;
+}
+.tooltipp::after{
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 40%;
+    border: 5px solid #000;
+    transform: rotate(45deg) translate(-50%);
+    z-index: -40;
+}
+.tooltip-parent:hover .tooltipp{
+    visibility: visible;
+    opacity: 1;
+}
+/* Left Area css */
+.left-top-area h2{
+    color:#fff;
+    padding: 20px 0;
+}
+.nav .nav-link{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px 35px !important;
+    margin-bottom: 15px;
+}
+.nav .nav-link:hover{
+    color:rgb(0, 0, 0);
+}
+.active:hover{
+    color:#fff !important;
+}
+/* Left Area css End */
+/* Right Area css */
+.list-group .list-group-item{
+    color:#fff;
+}
+.c-widht{
+    width: 17%;
+    text-align: center !important;
+}
+.table .thead{
+    background-color: #f4f4f5;
+}
+.table tr, th{
+    font-size: 12px;
+}
+.table tr .fa{
+    color:#fff;
+    background-color: red;
+    padding: 8px;
+    border-radius:4px ;
+}
+th.something{
+    width: 30%;
+}
+/* Right Area css End */
+/* Media css */
+@media(max-width:992px) {
+    .nav{
+        display: inline-block;
+        text-align: center;
+    }
+    .nav .nav-link{
+        display: inline-block !important;
+        font-size: 13px !important;
+        padding: 8px 10px !important;
+    }
+    .list-group{
+        justify-content: center !important;
+    }
+    .c-widht{
+        width: 25% !important;
+    }
+    .tab-content{
+        padding: 30px 5px !important;
+    }
+    .table tr, th{
+        font-size: 10px;
+        background-color: #fff;
+    }
+    .tooltipp{
+        display: none;
+    }
+}
+@media(max-width:500px){
+    .table tr, th{
+        font-size: 10px;
+    }
+}
